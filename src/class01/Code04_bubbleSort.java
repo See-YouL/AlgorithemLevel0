@@ -62,7 +62,7 @@ public class Code04_bubbleSort {
             // 0 ~ end
             // 对比排序01, 12, 23, second-1 second, ..., end-1 end
             for (int second = 1; second <= end; second++) {
-                if (arr[second] > arr[second - 1]) {
+                if (arr[second] < arr[second - 1]) {
                     swap(arr, second - 1, second);
                 }
             }
